@@ -70,7 +70,7 @@ class Keyv extends EventEmitter {
 	getAll() {
 	  const { store } = this.options;
 	  return Promise.resolve()
-	    .then(() => [...store.values()]);
+	    .then(() => [...store]);
 	}
 
 	set(key, value, ttl) {
