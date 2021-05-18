@@ -68,7 +68,6 @@ class Keyv extends EventEmitter {
 	}
 
 	getAll() {
-	  const keyPrefixed = this._getKeyPrefix(key);
 	  const { store } = this.options;
 	  return Promise.resolve()
 	    .then(() => [...store.values()]);
